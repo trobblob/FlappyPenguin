@@ -22,9 +22,7 @@ Partial Class ColorPicker
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ColorPicker))
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.grpColor1 = New System.Windows.Forms.GroupBox()
         Me.radGrey1 = New System.Windows.Forms.RadioButton()
         Me.radBlue1 = New System.Windows.Forms.RadioButton()
@@ -36,6 +34,7 @@ Partial Class ColorPicker
         Me.radGrey2 = New System.Windows.Forms.RadioButton()
         Me.radYellow2 = New System.Windows.Forms.RadioButton()
         Me.pbxPenguin = New System.Windows.Forms.PictureBox()
+        Me.lblTitle = New System.Windows.Forms.Label()
         Me.grpColor1.SuspendLayout()
         Me.grpColor2.SuspendLayout()
         CType(Me.pbxPenguin, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -47,7 +46,7 @@ Partial Class ColorPicker
         Me.grpColor1.Controls.Add(Me.radRed1)
         Me.grpColor1.Controls.Add(Me.radGrey1)
         Me.grpColor1.Controls.Add(Me.radYellow1)
-        Me.grpColor1.Location = New System.Drawing.Point(554, 40)
+        Me.grpColor1.Location = New System.Drawing.Point(334, 115)
         Me.grpColor1.Name = "grpColor1"
         Me.grpColor1.Size = New System.Drawing.Size(213, 148)
         Me.grpColor1.TabIndex = 0
@@ -104,7 +103,7 @@ Partial Class ColorPicker
         Me.grpColor2.Controls.Add(Me.radRed2)
         Me.grpColor2.Controls.Add(Me.radGrey2)
         Me.grpColor2.Controls.Add(Me.radYellow2)
-        Me.grpColor2.Location = New System.Drawing.Point(554, 226)
+        Me.grpColor2.Location = New System.Drawing.Point(334, 290)
         Me.grpColor2.Name = "grpColor2"
         Me.grpColor2.Size = New System.Drawing.Size(213, 148)
         Me.grpColor2.TabIndex = 5
@@ -158,18 +157,29 @@ Partial Class ColorPicker
         'pbxPenguin
         '
         Me.pbxPenguin.Image = CType(resources.GetObject("pbxPenguin.Image"), System.Drawing.Image)
-        Me.pbxPenguin.Location = New System.Drawing.Point(85, 26)
+        Me.pbxPenguin.Location = New System.Drawing.Point(24, 115)
         Me.pbxPenguin.Name = "pbxPenguin"
-        Me.pbxPenguin.Size = New System.Drawing.Size(289, 376)
+        Me.pbxPenguin.Size = New System.Drawing.Size(254, 323)
         Me.pbxPenguin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbxPenguin.TabIndex = 6
         Me.pbxPenguin.TabStop = False
+        '
+        'lblTitle
+        '
+        Me.lblTitle.Font = New System.Drawing.Font("MV Boli", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.Location = New System.Drawing.Point(63, 30)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(454, 57)
+        Me.lblTitle.TabIndex = 7
+        Me.lblTitle.Text = "Penguin Color Picker"
+        Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ColorPicker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(572, 450)
+        Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.pbxPenguin)
         Me.Controls.Add(Me.grpColor2)
         Me.Controls.Add(Me.grpColor1)
@@ -183,8 +193,6 @@ Partial Class ColorPicker
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents Timer1 As Timer
     Friend WithEvents grpColor1 As GroupBox
     Friend WithEvents radBlue1 As RadioButton
     Friend WithEvents radRed1 As RadioButton
@@ -196,4 +204,5 @@ Partial Class ColorPicker
     Friend WithEvents radGrey2 As RadioButton
     Friend WithEvents radYellow2 As RadioButton
     Friend WithEvents pbxPenguin As PictureBox
+    Friend WithEvents lblTitle As Label
 End Class

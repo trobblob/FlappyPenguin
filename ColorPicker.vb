@@ -4,7 +4,8 @@
     Dim strColor2 As String = "Grey"
 
     Private Sub ColorPicker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        radGrey1.Checked = True
+        radGrey2.Checked = True
     End Sub
 
     Sub SwitchBird()
