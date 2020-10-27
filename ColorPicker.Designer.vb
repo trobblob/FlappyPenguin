@@ -35,10 +35,10 @@ Partial Class ColorPicker
         Me.radRed2 = New System.Windows.Forms.RadioButton()
         Me.radGrey2 = New System.Windows.Forms.RadioButton()
         Me.radYellow2 = New System.Windows.Forms.RadioButton()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.pbxPenguin = New System.Windows.Forms.PictureBox()
         Me.grpColor1.SuspendLayout()
         Me.grpColor2.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbxPenguin, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'grpColor1
@@ -155,22 +155,22 @@ Partial Class ColorPicker
         Me.radYellow2.Text = "Yellow"
         Me.radYellow2.UseVisualStyleBackColor = True
         '
-        'PictureBox1
+        'pbxPenguin
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(85, 26)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(289, 376)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 6
-        Me.PictureBox1.TabStop = False
+        Me.pbxPenguin.Image = CType(resources.GetObject("pbxPenguin.Image"), System.Drawing.Image)
+        Me.pbxPenguin.Location = New System.Drawing.Point(85, 26)
+        Me.pbxPenguin.Name = "pbxPenguin"
+        Me.pbxPenguin.Size = New System.Drawing.Size(289, 376)
+        Me.pbxPenguin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbxPenguin.TabIndex = 6
+        Me.pbxPenguin.TabStop = False
         '
         'ColorPicker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.pbxPenguin)
         Me.Controls.Add(Me.grpColor2)
         Me.Controls.Add(Me.grpColor1)
         Me.Name = "ColorPicker"
@@ -179,7 +179,7 @@ Partial Class ColorPicker
         Me.grpColor1.PerformLayout()
         Me.grpColor2.ResumeLayout(False)
         Me.grpColor2.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbxPenguin, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -195,5 +195,5 @@ Partial Class ColorPicker
     Friend WithEvents radRed2 As RadioButton
     Friend WithEvents radGrey2 As RadioButton
     Friend WithEvents radYellow2 As RadioButton
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents pbxPenguin As PictureBox
 End Class
