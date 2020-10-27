@@ -32,7 +32,7 @@ Namespace My
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()> _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.FlappyPenguin.FlappyPenguin
+            Me.MainForm = Global.FlappyPenguin.ColorPicker
         End Sub
     End Class
 End Namespace

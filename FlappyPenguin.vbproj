@@ -73,11 +73,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FlappyPenguin.vb">
+    <Compile Include="ColorPicker.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FlappyPenguin.Designer.vb">
-      <DependentUpon>FlappyPenguin.vb</DependentUpon>
+    <Compile Include="ColorPicker.Designer.vb">
+      <DependentUpon>ColorPicker.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -97,8 +97,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FlappyPenguin.resx">
-      <DependentUpon>FlappyPenguin.vb</DependentUpon>
+    <EmbeddedResource Include="ColorPicker.resx">
+      <DependentUpon>ColorPicker.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
