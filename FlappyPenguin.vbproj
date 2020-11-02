@@ -80,6 +80,12 @@
       <DependentUpon>ColorPicker.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EndPage.Designer.vb">
+      <DependentUpon>EndPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EndPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -99,6 +105,9 @@
   <ItemGroup>
     <EmbeddedResource Include="ColorPicker.resx">
       <DependentUpon>ColorPicker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EndPage.resx">
+      <DependentUpon>EndPage.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
