@@ -37,7 +37,7 @@ Partial Class FlappyPenguinForm
         'Timer1
         '
         Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 150
+        Me.Timer1.Interval = 80
         '
         'pbxPenguin
         '
@@ -53,18 +53,18 @@ Partial Class FlappyPenguinForm
         'pbxPipe2
         '
         Me.pbxPipe2.BackColor = System.Drawing.Color.GreenYellow
-        Me.pbxPipe2.Location = New System.Drawing.Point(451, 320)
+        Me.pbxPipe2.Location = New System.Drawing.Point(500, 400)
         Me.pbxPipe2.Name = "pbxPipe2"
-        Me.pbxPipe2.Size = New System.Drawing.Size(100, 341)
+        Me.pbxPipe2.Size = New System.Drawing.Size(100, 750)
         Me.pbxPipe2.TabIndex = 1
         Me.pbxPipe2.TabStop = False
         '
         'pbxPipe1
         '
         Me.pbxPipe1.BackColor = System.Drawing.Color.GreenYellow
-        Me.pbxPipe1.Location = New System.Drawing.Point(451, 0)
+        Me.pbxPipe1.Location = New System.Drawing.Point(500, -550)
         Me.pbxPipe1.Name = "pbxPipe1"
-        Me.pbxPipe1.Size = New System.Drawing.Size(100, 158)
+        Me.pbxPipe1.Size = New System.Drawing.Size(100, 750)
         Me.pbxPipe1.TabIndex = 2
         Me.pbxPipe1.TabStop = False
         '
