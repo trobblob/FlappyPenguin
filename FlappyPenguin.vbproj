@@ -86,6 +86,12 @@
     <Compile Include="EndPage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FlappyPenguinForm.Designer.vb">
+      <DependentUpon>FlappyPenguinForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FlappyPenguinForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -101,6 +107,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="StartPage.Designer.vb">
+      <DependentUpon>StartPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StartPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ColorPicker.resx">
@@ -109,11 +121,17 @@
     <EmbeddedResource Include="EndPage.resx">
       <DependentUpon>EndPage.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FlappyPenguinForm.resx">
+      <DependentUpon>FlappyPenguinForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartPage.resx">
+      <DependentUpon>StartPage.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
