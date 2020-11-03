@@ -24,9 +24,9 @@ Partial Class ColorPicker
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ColorPicker))
         Me.grpColor1 = New System.Windows.Forms.GroupBox()
-        Me.radGrey1 = New System.Windows.Forms.RadioButton()
         Me.radBlue1 = New System.Windows.Forms.RadioButton()
         Me.radRed1 = New System.Windows.Forms.RadioButton()
+        Me.radGrey1 = New System.Windows.Forms.RadioButton()
         Me.radYellow1 = New System.Windows.Forms.RadioButton()
         Me.grpColor2 = New System.Windows.Forms.GroupBox()
         Me.radBlue2 = New System.Windows.Forms.RadioButton()
@@ -53,17 +53,6 @@ Partial Class ColorPicker
         Me.grpColor1.TabStop = False
         Me.grpColor1.Text = "First Color"
         '
-        'radGrey1
-        '
-        Me.radGrey1.AutoSize = True
-        Me.radGrey1.Location = New System.Drawing.Point(32, 39)
-        Me.radGrey1.Name = "radGrey1"
-        Me.radGrey1.Size = New System.Drawing.Size(47, 17)
-        Me.radGrey1.TabIndex = 1
-        Me.radGrey1.TabStop = True
-        Me.radGrey1.Text = "Grey"
-        Me.radGrey1.UseVisualStyleBackColor = True
-        '
         'radBlue1
         '
         Me.radBlue1.AutoSize = True
@@ -85,6 +74,17 @@ Partial Class ColorPicker
         Me.radRed1.TabStop = True
         Me.radRed1.Text = "Red"
         Me.radRed1.UseVisualStyleBackColor = True
+        '
+        'radGrey1
+        '
+        Me.radGrey1.AutoSize = True
+        Me.radGrey1.Location = New System.Drawing.Point(32, 39)
+        Me.radGrey1.Name = "radGrey1"
+        Me.radGrey1.Size = New System.Drawing.Size(47, 17)
+        Me.radGrey1.TabIndex = 1
+        Me.radGrey1.TabStop = True
+        Me.radGrey1.Text = "Grey"
+        Me.radGrey1.UseVisualStyleBackColor = True
         '
         'radYellow1
         '
@@ -156,6 +156,7 @@ Partial Class ColorPicker
         '
         'pbxPenguin
         '
+        Me.pbxPenguin.BackColor = System.Drawing.Color.Transparent
         Me.pbxPenguin.Image = CType(resources.GetObject("pbxPenguin.Image"), System.Drawing.Image)
         Me.pbxPenguin.Location = New System.Drawing.Point(24, 115)
         Me.pbxPenguin.Name = "pbxPenguin"
