@@ -41,6 +41,7 @@ Partial Class FlappyPenguinForm
         '
         'pbxPenguin
         '
+        Me.pbxPenguin.BackColor = System.Drawing.Color.Transparent
         Me.pbxPenguin.Image = CType(resources.GetObject("pbxPenguin.Image"), System.Drawing.Image)
         Me.pbxPenguin.Location = New System.Drawing.Point(141, 169)
         Me.pbxPenguin.Name = "pbxPenguin"
