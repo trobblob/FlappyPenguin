@@ -84,7 +84,7 @@ Partial Class FlappyPenguinForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(794, 661)
+        Me.ClientSize = New System.Drawing.Size(794, 761)
         Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.pbxPipe1)
         Me.Controls.Add(Me.pbxPipe2)
