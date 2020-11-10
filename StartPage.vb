@@ -6,9 +6,9 @@
 
     Private Sub btnUnlocks_Click(sender As Object, e As EventArgs) Handles btnUnlocks.Click
         'Creates an instance of the unlockables form
-        Dim frmUnlockables As New ColorPicker
-        frmUnlockables.ShowDialog()
-
+        Dim frmColorPicker As New ColorPicker
+        frmColorPicker.ShowDialog()
+        pbxPenguin.Image = frmColorPicker.pbxPenguin.Image
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
@@ -18,7 +18,7 @@
 
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
         'Creates an instance of the game
-        Dim frmFlappyPenguinForm As New FlappyPenguinForm
+        Dim frmFlappyPenguinForm As New FlappyPenguinForm(pbxPenguin.Image)
         frmFlappyPenguinForm.ShowDialog()
     End Sub
 
