@@ -60,7 +60,6 @@ Partial Class ColorPicker
         Me.radBlue1.Name = "radBlue1"
         Me.radBlue1.Size = New System.Drawing.Size(46, 17)
         Me.radBlue1.TabIndex = 2
-        Me.radBlue1.TabStop = True
         Me.radBlue1.Text = "Blue"
         Me.radBlue1.UseVisualStyleBackColor = True
         '
@@ -71,13 +70,13 @@ Partial Class ColorPicker
         Me.radRed1.Name = "radRed1"
         Me.radRed1.Size = New System.Drawing.Size(45, 17)
         Me.radRed1.TabIndex = 3
-        Me.radRed1.TabStop = True
         Me.radRed1.Text = "Red"
         Me.radRed1.UseVisualStyleBackColor = True
         '
         'radGrey1
         '
         Me.radGrey1.AutoSize = True
+        Me.radGrey1.Checked = True
         Me.radGrey1.Location = New System.Drawing.Point(32, 39)
         Me.radGrey1.Name = "radGrey1"
         Me.radGrey1.Size = New System.Drawing.Size(47, 17)
@@ -93,7 +92,6 @@ Partial Class ColorPicker
         Me.radYellow1.Name = "radYellow1"
         Me.radYellow1.Size = New System.Drawing.Size(56, 17)
         Me.radYellow1.TabIndex = 4
-        Me.radYellow1.TabStop = True
         Me.radYellow1.Text = "Yellow"
         Me.radYellow1.UseVisualStyleBackColor = True
         '
@@ -117,7 +115,6 @@ Partial Class ColorPicker
         Me.radBlue2.Name = "radBlue2"
         Me.radBlue2.Size = New System.Drawing.Size(46, 17)
         Me.radBlue2.TabIndex = 2
-        Me.radBlue2.TabStop = True
         Me.radBlue2.Text = "Blue"
         Me.radBlue2.UseVisualStyleBackColor = True
         '
@@ -128,13 +125,13 @@ Partial Class ColorPicker
         Me.radRed2.Name = "radRed2"
         Me.radRed2.Size = New System.Drawing.Size(45, 17)
         Me.radRed2.TabIndex = 3
-        Me.radRed2.TabStop = True
         Me.radRed2.Text = "Red"
         Me.radRed2.UseVisualStyleBackColor = True
         '
         'radGrey2
         '
         Me.radGrey2.AutoSize = True
+        Me.radGrey2.Checked = True
         Me.radGrey2.Location = New System.Drawing.Point(32, 39)
         Me.radGrey2.Name = "radGrey2"
         Me.radGrey2.Size = New System.Drawing.Size(47, 17)
@@ -150,7 +147,6 @@ Partial Class ColorPicker
         Me.radYellow2.Name = "radYellow2"
         Me.radYellow2.Size = New System.Drawing.Size(56, 17)
         Me.radYellow2.TabIndex = 4
-        Me.radYellow2.TabStop = True
         Me.radYellow2.Text = "Yellow"
         Me.radYellow2.UseVisualStyleBackColor = True
         '

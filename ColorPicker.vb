@@ -2,14 +2,16 @@
 
     Dim strColor1 As String = "Grey"
     Dim strColor2 As String = "Grey"
-
-    Private Sub ColorPicker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        radGrey1.Checked = True
-        radGrey2.Checked = True
-    End Sub
+    Dim strPath As String = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "PenguinSprites")
 
     Sub SwitchBird()
-        pbxPenguin.Image = Image.FromFile(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "PenguinSprites", $"{strColor1}{strColor2}Penguin.png"))
+        Try
+            pbxPenguin.Image = Image.FromFile(strPath & $"\{strColor1}{strColor2}Penguin.png")
+        Catch ex As Exception
+            pbxPenguin.Image = Image.FromFile(strPath & "\GreyGreyPenguin.png")
+        End Try
+
+        pbxPenguin.Image.RotateFlip(RotateFlipType.RotateNoneFlipX)
     End Sub
 
     Private Sub radGrey1_CheckedChanged(sender As Object, e As EventArgs) Handles radGrey1.CheckedChanged
