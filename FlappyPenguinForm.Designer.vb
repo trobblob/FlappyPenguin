@@ -52,19 +52,23 @@ Partial Class FlappyPenguinForm
         '
         'pbxPipe2
         '
-        Me.pbxPipe2.BackColor = System.Drawing.Color.GreenYellow
+        Me.pbxPipe2.BackColor = System.Drawing.Color.Transparent
+        Me.pbxPipe2.Image = CType(resources.GetObject("pbxPipe2.Image"), System.Drawing.Image)
         Me.pbxPipe2.Location = New System.Drawing.Point(500, 400)
         Me.pbxPipe2.Name = "pbxPipe2"
         Me.pbxPipe2.Size = New System.Drawing.Size(100, 750)
+        Me.pbxPipe2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbxPipe2.TabIndex = 1
         Me.pbxPipe2.TabStop = False
         '
         'pbxPipe1
         '
-        Me.pbxPipe1.BackColor = System.Drawing.Color.GreenYellow
+        Me.pbxPipe1.BackColor = System.Drawing.Color.Transparent
+        Me.pbxPipe1.Image = CType(resources.GetObject("pbxPipe1.Image"), System.Drawing.Image)
         Me.pbxPipe1.Location = New System.Drawing.Point(500, -550)
         Me.pbxPipe1.Name = "pbxPipe1"
         Me.pbxPipe1.Size = New System.Drawing.Size(100, 750)
+        Me.pbxPipe1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbxPipe1.TabIndex = 2
         Me.pbxPipe1.TabStop = False
         '
