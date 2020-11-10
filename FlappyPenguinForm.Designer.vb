@@ -37,15 +37,15 @@ Partial Class FlappyPenguinForm
         'Timer1
         '
         Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 80
+        Me.Timer1.Interval = 30
         '
         'pbxPenguin
         '
         Me.pbxPenguin.BackColor = System.Drawing.Color.Transparent
         Me.pbxPenguin.Image = CType(resources.GetObject("pbxPenguin.Image"), System.Drawing.Image)
-        Me.pbxPenguin.Location = New System.Drawing.Point(141, 169)
+        Me.pbxPenguin.Location = New System.Drawing.Point(86, 170)
         Me.pbxPenguin.Name = "pbxPenguin"
-        Me.pbxPenguin.Size = New System.Drawing.Size(90, 80)
+        Me.pbxPenguin.Size = New System.Drawing.Size(72, 80)
         Me.pbxPenguin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbxPenguin.TabIndex = 0
         Me.pbxPenguin.TabStop = False

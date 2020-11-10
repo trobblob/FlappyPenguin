@@ -10,7 +10,7 @@
         Dim rand As New Random
         Dim intPipe As Integer
 
-        pbxPenguin.Location = New Point(Me.pbxPenguin.Location.X, Me.pbxPenguin.Location.Y + 12)
+        pbxPenguin.Location = New Point(Me.pbxPenguin.Location.X, Me.pbxPenguin.Location.Y + 5)
 
         If pbxPipe1.Location.X > 0 Then
 
@@ -21,11 +21,19 @@
             pbxPipe1.Location = New Point(500, intPipe)
             pbxPipe2.Location = New Point(500, intPipe + 950)
         End If
+        collision()
+    End Sub
 
+    Sub collision()
+        If pbxPenguin.Location.X + pbxPenguin.Width >= pbxPipe1.Location.X And pbxPenguin.Location.X <= pbxPipe1.Location.X Then
+            If pbxPenguin.Location.Y <= pbxPipe1.Location.Y Or pbxPenguin.Location.Y + pbxPenguin.Height <= pbxPipe2.Location.Y Then
+                Me.Close()
+            End If
+        End If
     End Sub
 
     Private Sub FlappyPenguinForm_Click(sender As Object, e As EventArgs) Handles MyBase.Click
-        pbxPenguin.Location = New Point(Me.pbxPenguin.Location.X, Me.pbxPenguin.Location.Y - 210)
+        pbxPenguin.Location = New Point(Me.pbxPenguin.Location.X, Me.pbxPenguin.Location.Y - 110)
     End Sub
 
 End Class

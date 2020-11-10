@@ -19,7 +19,9 @@
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
         'Creates an instance of the game
         Dim frmFlappyPenguinForm As New FlappyPenguinForm(pbxPenguin.Image)
+        Dim frmEndPage As New EndPage
         frmFlappyPenguinForm.ShowDialog()
+        frmEndPage.ShowDialog()
     End Sub
 
     Private Sub StartPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
