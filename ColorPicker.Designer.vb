@@ -35,6 +35,7 @@ Partial Class ColorPicker
         Me.radYellow2 = New System.Windows.Forms.RadioButton()
         Me.pbxPenguin = New System.Windows.Forms.PictureBox()
         Me.lblTitle = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.grpColor1.SuspendLayout()
         Me.grpColor2.SuspendLayout()
         CType(Me.pbxPenguin, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -46,7 +47,7 @@ Partial Class ColorPicker
         Me.grpColor1.Controls.Add(Me.radRed1)
         Me.grpColor1.Controls.Add(Me.radGrey1)
         Me.grpColor1.Controls.Add(Me.radYellow1)
-        Me.grpColor1.Location = New System.Drawing.Point(334, 115)
+        Me.grpColor1.Location = New System.Drawing.Point(334, 86)
         Me.grpColor1.Name = "grpColor1"
         Me.grpColor1.Size = New System.Drawing.Size(213, 148)
         Me.grpColor1.TabIndex = 0
@@ -101,7 +102,7 @@ Partial Class ColorPicker
         Me.grpColor2.Controls.Add(Me.radRed2)
         Me.grpColor2.Controls.Add(Me.radGrey2)
         Me.grpColor2.Controls.Add(Me.radYellow2)
-        Me.grpColor2.Location = New System.Drawing.Point(334, 290)
+        Me.grpColor2.Location = New System.Drawing.Point(334, 261)
         Me.grpColor2.Name = "grpColor2"
         Me.grpColor2.Size = New System.Drawing.Size(213, 148)
         Me.grpColor2.TabIndex = 5
@@ -154,7 +155,7 @@ Partial Class ColorPicker
         '
         Me.pbxPenguin.BackColor = System.Drawing.Color.Transparent
         Me.pbxPenguin.Image = CType(resources.GetObject("pbxPenguin.Image"), System.Drawing.Image)
-        Me.pbxPenguin.Location = New System.Drawing.Point(24, 115)
+        Me.pbxPenguin.Location = New System.Drawing.Point(24, 86)
         Me.pbxPenguin.Name = "pbxPenguin"
         Me.pbxPenguin.Size = New System.Drawing.Size(254, 323)
         Me.pbxPenguin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -164,18 +165,29 @@ Partial Class ColorPicker
         'lblTitle
         '
         Me.lblTitle.Font = New System.Drawing.Font("MV Boli", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(63, 30)
+        Me.lblTitle.Location = New System.Drawing.Point(63, 8)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(454, 57)
         Me.lblTitle.TabIndex = 7
         Me.lblTitle.Text = "Penguin Color Picker"
         Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("MV Boli", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(211, 458)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(147, 50)
+        Me.Button1.TabIndex = 8
+        Me.Button1.Text = "Finish"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'ColorPicker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(572, 450)
+        Me.ClientSize = New System.Drawing.Size(572, 548)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.pbxPenguin)
         Me.Controls.Add(Me.grpColor2)
@@ -202,4 +214,5 @@ Partial Class ColorPicker
     Friend WithEvents radYellow2 As RadioButton
     Friend WithEvents pbxPenguin As PictureBox
     Friend WithEvents lblTitle As Label
+    Friend WithEvents Button1 As Button
 End Class

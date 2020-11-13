@@ -46,7 +46,7 @@ Partial Class StartPage
         '
         Me.btnStart.BackColor = System.Drawing.Color.White
         Me.btnStart.Font = New System.Drawing.Font("Segoe Print", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnStart.Location = New System.Drawing.Point(12, 148)
+        Me.btnStart.Location = New System.Drawing.Point(12, 200)
         Me.btnStart.Name = "btnStart"
         Me.btnStart.Size = New System.Drawing.Size(120, 55)
         Me.btnStart.TabIndex = 1
@@ -57,7 +57,7 @@ Partial Class StartPage
         '
         Me.btnUnlocks.BackColor = System.Drawing.Color.White
         Me.btnUnlocks.Font = New System.Drawing.Font("Segoe Print", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUnlocks.Location = New System.Drawing.Point(12, 271)
+        Me.btnUnlocks.Location = New System.Drawing.Point(12, 323)
         Me.btnUnlocks.Name = "btnUnlocks"
         Me.btnUnlocks.Size = New System.Drawing.Size(120, 55)
         Me.btnUnlocks.TabIndex = 2
@@ -68,7 +68,7 @@ Partial Class StartPage
         '
         Me.btnExit.BackColor = System.Drawing.Color.White
         Me.btnExit.Font = New System.Drawing.Font("Segoe Print", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.Location = New System.Drawing.Point(12, 396)
+        Me.btnExit.Location = New System.Drawing.Point(12, 448)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(120, 55)
         Me.btnExit.TabIndex = 3
@@ -79,7 +79,7 @@ Partial Class StartPage
         '
         Me.pbxPenguin.BackColor = System.Drawing.Color.Transparent
         Me.pbxPenguin.Image = CType(resources.GetObject("pbxPenguin.Image"), System.Drawing.Image)
-        Me.pbxPenguin.Location = New System.Drawing.Point(210, 100)
+        Me.pbxPenguin.Location = New System.Drawing.Point(210, 152)
         Me.pbxPenguin.Name = "pbxPenguin"
         Me.pbxPenguin.Size = New System.Drawing.Size(300, 400)
         Me.pbxPenguin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage

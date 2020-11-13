@@ -25,6 +25,6 @@
     End Sub
 
     Private Sub StartPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        pbxPenguin.Image.RotateFlip(RotateFlipType.RotateNoneFlipX)
     End Sub
 End Class
