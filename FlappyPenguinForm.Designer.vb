@@ -37,7 +37,7 @@ Partial Class FlappyPenguinForm
         'Timer1
         '
         Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 30
+        Me.Timer1.Interval = 3
         '
         'pbxPenguin
         '
