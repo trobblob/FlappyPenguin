@@ -27,6 +27,16 @@
         penguinMovement()
         pipeMovement()
         collision()
+        Score()
+    End Sub
+
+    Sub Score()
+        Dim intScore As Integer
+        If pbxPipe1.Location.X = 10 Then
+            intScore += 1
+
+        End If
+        lblScore.Text += intScore
     End Sub
 
     Sub collision()

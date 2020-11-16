@@ -76,9 +76,9 @@ Partial Class FlappyPenguinForm
         '
         Me.lblScore.BackColor = System.Drawing.Color.Transparent
         Me.lblScore.Font = New System.Drawing.Font("Segoe Print", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblScore.Location = New System.Drawing.Point(0, 0)
+        Me.lblScore.Location = New System.Drawing.Point(-1, -1)
         Me.lblScore.Name = "lblScore"
-        Me.lblScore.Size = New System.Drawing.Size(51, 65)
+        Me.lblScore.Size = New System.Drawing.Size(107, 65)
         Me.lblScore.TabIndex = 3
         Me.lblScore.Text = "0"
         '
