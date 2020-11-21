@@ -12,6 +12,10 @@
         pbxPenguin.Image = penguinImage
     End Sub
 
+    Public Function intGetScore() As Integer
+        Return intFinalScore
+    End Function
+
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         'Dim Pen = CreateGraphics()
         'Pen.DrawPolygon(Pens.DarkBlue, {New PointF(pbxPenguin.Location.X - 1, pbxPenguin.Location.Y - 1),
@@ -45,12 +49,12 @@
     Sub collision()
         If pbxPenguin.Location.X + pbxPenguin.Width >= pbxPipe1.Location.X And pbxPenguin.Location.X <= pbxPipe1.Location.X Then
             If pbxPenguin.Location.Y <= pbxPipe1.Location.Y + pbxPipe1.Height Or pbxPenguin.Location.Y + pbxPenguin.Height >= pbxPipe2.Location.Y Then
-                Die()
+                Close()
             End If
         End If
 
         If pbxPenguin.Location.Y + pbxPenguin.Height >= Me.Height Then
-            Die()
+            Close()
         End If
     End Sub
 
@@ -69,13 +73,14 @@
         End If
     End Sub
 
-    Sub Die()
-        'Closes the form and takes the user to the End Page
-        Dim frmEndPage As New EndPage(pbxPenguin.Image, intFinalScore)
-        Timer1.Stop()
-        Close()
-        frmEndPage.ShowDialog()
-    End Sub
+    'Sub Die()
+    '    'Closes the form and takes the user to the End Page
+    '    Dim frmEndPage As New EndPage(pbxPenguin.Image, intFinalScore)
+    '    Timer1.Stop()
+    '    Visible = False
+    '    frmEndPage.ShowDialog()
+    '    Close()
+    'End Sub
 
     Private Sub FlappyPenguinForm_KeyPress(sender As Object, e As KeyPressEventArgs) Handles MyBase.KeyPress
         'This subroutine makes the penguin jump

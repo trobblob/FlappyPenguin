@@ -2,13 +2,17 @@
 
     Dim intScore As Integer
     Dim pbxPenguin As Image
+    Dim blnReplay As Boolean = False
 
-    Sub New(penguinImage As Image, intScore1 As Integer)
+    Sub New(intScore1 As Integer)
         ' This call is required by the designer.
         InitializeComponent()
-        pbxPenguin = penguinImage
         intScore = intScore1
     End Sub
+
+    Public Function blnGetReplay() As Boolean
+        Return blnReplay
+    End Function
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         'Closes the EndPage form
@@ -16,8 +20,8 @@
     End Sub
 
     Private Sub btnReplay_Click(sender As Object, e As EventArgs) Handles btnReplay.Click
-        Dim frmFlappyPenguinForm As New FlappyPenguinForm(pbxPenguin)
-        'Opens the Game window again to replay
-        frmFlappyPenguinForm.ShowDialog()
+        'Sets blnReplay so that the user plays the game again
+        blnReplay = True
+        Close()
     End Sub
 End Class
