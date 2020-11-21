@@ -29,6 +29,7 @@ Partial Class FlappyPenguinForm
         Me.pbxPipe2 = New System.Windows.Forms.PictureBox()
         Me.pbxPipe1 = New System.Windows.Forms.PictureBox()
         Me.lblScore = New System.Windows.Forms.Label()
+        Me.lblAttempt = New System.Windows.Forms.Label()
         CType(Me.pbxPenguin, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxPipe2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxPipe1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -82,6 +83,16 @@ Partial Class FlappyPenguinForm
         Me.lblScore.TabIndex = 3
         Me.lblScore.Text = "0"
         '
+        'lblAttempt
+        '
+        Me.lblAttempt.BackColor = System.Drawing.Color.Transparent
+        Me.lblAttempt.Font = New System.Drawing.Font("Segoe Print", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAttempt.Location = New System.Drawing.Point(-9, 706)
+        Me.lblAttempt.Name = "lblAttempt"
+        Me.lblAttempt.Size = New System.Drawing.Size(235, 56)
+        Me.lblAttempt.TabIndex = 4
+        Me.lblAttempt.Text = "Attempt:"
+        '
         'FlappyPenguinForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -89,6 +100,7 @@ Partial Class FlappyPenguinForm
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(794, 761)
+        Me.Controls.Add(Me.lblAttempt)
         Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.pbxPipe1)
         Me.Controls.Add(Me.pbxPipe2)
@@ -107,4 +119,5 @@ Partial Class FlappyPenguinForm
     Friend WithEvents pbxPipe2 As PictureBox
     Friend WithEvents pbxPipe1 As PictureBox
     Friend WithEvents lblScore As Label
+    Friend WithEvents lblAttempt As Label
 End Class

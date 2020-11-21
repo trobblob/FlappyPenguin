@@ -3,12 +3,15 @@
     Dim intJumpFrame As Integer = 1
     Dim rand As New Random
     Dim intPipe As Integer
+    Dim intFinalScore As Integer
+    Public intSavedScore(5) As Integer         'Array to hold score values
 
     Sub New(penguinImage As Image)
         ' This call is required by the designer.
         InitializeComponent()
         pbxPenguin.Image = penguinImage
     End Sub
+
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         'Dim Pen = CreateGraphics()
@@ -27,16 +30,17 @@
         penguinMovement()
         pipeMovement()
         collision()
-        Score()
+        score()
     End Sub
 
-    Sub Score()
+    Sub score()
         Dim intScore As Integer
         If pbxPipe1.Location.X = 10 Then
             intScore += 1
 
         End If
         lblScore.Text += intScore
+        intFinalScore += intScore
     End Sub
 
     Sub collision()
@@ -71,4 +75,20 @@
     Private Sub FlappyPenguinForm_KeyPress(sender As Object, e As KeyPressEventArgs) Handles MyBase.KeyPress
         intJumpFrame = -5
     End Sub
+
+    Private Sub FlappyPenguinForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim intAttempt As Integer
+        intAttempt += 1
+        lblAttempt.Text = "Attempt: " & intAttempt
+    End Sub
+
+    Sub New(intScore1 As Integer)
+
+        ' This call is required by the designer.
+        InitializeComponent()
+        intScore1 = intFinalScore
+
+    End Sub
+
+
 End Class
