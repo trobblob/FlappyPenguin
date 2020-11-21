@@ -1,4 +1,6 @@
 ﻿Public Class ColorPicker
+    'Flappy Penguin Color Picker
+    'This form allows the user to customize the penguin from 
 
     Dim strColor1 As String = "Grey"
     Dim strColor2 As String = "Grey"
@@ -55,7 +57,7 @@
         SwitchBird()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnFinish.Click
         'Exits Application
         Close()
     End Sub

@@ -56,19 +56,19 @@ Partial Class StartPage
         'btnUnlocks
         '
         Me.btnUnlocks.BackColor = System.Drawing.Color.White
-        Me.btnUnlocks.Font = New System.Drawing.Font("Segoe Print", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUnlocks.Font = New System.Drawing.Font("Segoe Print", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUnlocks.Location = New System.Drawing.Point(12, 323)
         Me.btnUnlocks.Name = "btnUnlocks"
         Me.btnUnlocks.Size = New System.Drawing.Size(120, 55)
         Me.btnUnlocks.TabIndex = 2
-        Me.btnUnlocks.Text = "Unlocks"
+        Me.btnUnlocks.Text = "Color Picker"
         Me.btnUnlocks.UseVisualStyleBackColor = False
         '
         'btnExit
         '
         Me.btnExit.BackColor = System.Drawing.Color.White
         Me.btnExit.Font = New System.Drawing.Font("Segoe Print", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.Location = New System.Drawing.Point(12, 448)
+        Me.btnExit.Location = New System.Drawing.Point(12, 449)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(120, 55)
         Me.btnExit.TabIndex = 3
