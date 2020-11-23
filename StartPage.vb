@@ -4,6 +4,8 @@
     'Connor Hultman and Tucker Robson
     '10/26/2020
 
+    Dim intAttempt As Integer
+
     Private Sub btnUnlocks_Click(sender As Object, e As EventArgs) Handles btnUnlocks.Click
         'Creates an instance of the unlockables form
         Dim frmColorPicker As New ColorPicker
@@ -33,12 +35,19 @@
         Dim blnReplay As Boolean = frmEndPage.blnGetReplay()
         If blnReplay Then
             btnStart_Click(sender, e)
+            intAttempt += 1
         End If
 
         Visible = True
+
     End Sub
 
+    Public Function intGetAttempt() As Integer
+        Return intAttempt
+    End Function
+
     Private Sub StartPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Flips the penguin image so it faces the other direction in the game.
         pbxPenguin.Image.RotateFlip(RotateFlipType.RotateNoneFlipX)
     End Sub
 End Class

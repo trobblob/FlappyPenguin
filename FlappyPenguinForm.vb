@@ -16,6 +16,7 @@
         Return intFinalScore
     End Function
 
+
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         'Dim Pen = CreateGraphics()
         'Pen.DrawPolygon(Pens.DarkBlue, {New PointF(pbxPenguin.Location.X - 1, pbxPenguin.Location.Y - 1),
@@ -88,7 +89,8 @@
     End Sub
 
     Private Sub FlappyPenguinForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim intAttempt As Integer
+        Dim frmStartPage As New StartPage
+        Dim intAttempt As Integer = frmStartPage.intGetAttempt()
         intAttempt += 1
         lblAttempt.Text = "Attempt: " & intAttempt
     End Sub

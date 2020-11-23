@@ -24,4 +24,9 @@
         blnReplay = True
         Close()
     End Sub
+
+    Private Sub EndPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Shows the final score
+        lblFinalScore.Text = "Final Score: " & intScore
+    End Sub
 End Class
