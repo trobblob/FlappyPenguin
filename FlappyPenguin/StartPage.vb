@@ -7,7 +7,7 @@
     Dim intAttempt As Integer = 1
     Dim intScores As New List(Of Integer)
 
-    Private Sub btnUnlocks_Click(sender As Object, e As EventArgs) Handles btnUnlocks.Click
+    Private Sub btnUnlocks_Click(sender As Object, e As EventArgs) Handles btnColorPicker.Click
         'Creates an instance of the unlockables form
         Dim frmColorPicker As New ColorPicker
         Visible = False

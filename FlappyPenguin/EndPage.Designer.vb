@@ -112,7 +112,7 @@ Partial Class EndPage
         Me.Controls.Add(Me.lblFinalScore)
         Me.Controls.Add(Me.btnReplay)
         Me.Name = "EndPage"
-        Me.Text = "EndPage"
+        Me.Text = "You died"
         Me.grbTopScores.ResumeLayout(False)
         CType(Me.pbxFailedPenguin, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

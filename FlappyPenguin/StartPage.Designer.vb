@@ -25,7 +25,7 @@ Partial Class StartPage
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(StartPage))
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.btnStart = New System.Windows.Forms.Button()
-        Me.btnUnlocks = New System.Windows.Forms.Button()
+        Me.btnColorPicker = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.pbxPenguin = New System.Windows.Forms.PictureBox()
         CType(Me.pbxPenguin, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -53,16 +53,16 @@ Partial Class StartPage
         Me.btnStart.Text = "Start"
         Me.btnStart.UseVisualStyleBackColor = False
         '
-        'btnUnlocks
+        'btnColorPicker
         '
-        Me.btnUnlocks.BackColor = System.Drawing.Color.White
-        Me.btnUnlocks.Font = New System.Drawing.Font("Segoe Print", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUnlocks.Location = New System.Drawing.Point(12, 323)
-        Me.btnUnlocks.Name = "btnUnlocks"
-        Me.btnUnlocks.Size = New System.Drawing.Size(120, 55)
-        Me.btnUnlocks.TabIndex = 2
-        Me.btnUnlocks.Text = "Color Picker"
-        Me.btnUnlocks.UseVisualStyleBackColor = False
+        Me.btnColorPicker.BackColor = System.Drawing.Color.White
+        Me.btnColorPicker.Font = New System.Drawing.Font("Segoe Print", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnColorPicker.Location = New System.Drawing.Point(12, 323)
+        Me.btnColorPicker.Name = "btnColorPicker"
+        Me.btnColorPicker.Size = New System.Drawing.Size(120, 55)
+        Me.btnColorPicker.TabIndex = 2
+        Me.btnColorPicker.Text = "Color Picker"
+        Me.btnColorPicker.UseVisualStyleBackColor = False
         '
         'btnExit
         '
@@ -94,7 +94,7 @@ Partial Class StartPage
         Me.ClientSize = New System.Drawing.Size(794, 661)
         Me.Controls.Add(Me.pbxPenguin)
         Me.Controls.Add(Me.btnExit)
-        Me.Controls.Add(Me.btnUnlocks)
+        Me.Controls.Add(Me.btnColorPicker)
         Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.lblTitle)
         Me.Name = "StartPage"
@@ -107,7 +107,7 @@ Partial Class StartPage
 
     Friend WithEvents lblTitle As Label
     Friend WithEvents btnStart As Button
-    Friend WithEvents btnUnlocks As Button
+    Friend WithEvents btnColorPicker As Button
     Friend WithEvents btnExit As Button
     Friend WithEvents pbxPenguin As PictureBox
 End Class
