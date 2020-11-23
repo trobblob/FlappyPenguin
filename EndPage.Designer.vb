@@ -26,7 +26,7 @@ Partial Class EndPage
         Me.btnReplay = New System.Windows.Forms.Button()
         Me.lblFinalScore = New System.Windows.Forms.Label()
         Me.grbTopScores = New System.Windows.Forms.GroupBox()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.lstScores = New System.Windows.Forms.ListBox()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.pbxFailedPenguin = New System.Windows.Forms.PictureBox()
         Me.grbTopScores.SuspendLayout()
@@ -58,7 +58,7 @@ Partial Class EndPage
         'grbTopScores
         '
         Me.grbTopScores.BackColor = System.Drawing.Color.Transparent
-        Me.grbTopScores.Controls.Add(Me.ListBox1)
+        Me.grbTopScores.Controls.Add(Me.lstScores)
         Me.grbTopScores.Font = New System.Drawing.Font("Segoe Print", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grbTopScores.ForeColor = System.Drawing.SystemColors.ControlText
         Me.grbTopScores.Location = New System.Drawing.Point(471, 136)
@@ -68,15 +68,15 @@ Partial Class EndPage
         Me.grbTopScores.TabStop = False
         Me.grbTopScores.Text = "Top Scores Today"
         '
-        'ListBox1
+        'lstScores
         '
-        Me.ListBox1.Font = New System.Drawing.Font("Segoe Print", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 21
-        Me.ListBox1.Location = New System.Drawing.Point(6, 44)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(164, 193)
-        Me.ListBox1.TabIndex = 0
+        Me.lstScores.Font = New System.Drawing.Font("Segoe Print", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstScores.FormattingEnabled = True
+        Me.lstScores.ItemHeight = 21
+        Me.lstScores.Location = New System.Drawing.Point(6, 44)
+        Me.lstScores.Name = "lstScores"
+        Me.lstScores.Size = New System.Drawing.Size(164, 193)
+        Me.lstScores.TabIndex = 0
         '
         'btnBack
         '
@@ -123,7 +123,7 @@ Partial Class EndPage
     Friend WithEvents btnReplay As Button
     Friend WithEvents lblFinalScore As Label
     Friend WithEvents grbTopScores As GroupBox
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents lstScores As ListBox
     Friend WithEvents btnBack As Button
     Friend WithEvents pbxFailedPenguin As PictureBox
 End Class
