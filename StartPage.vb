@@ -36,8 +36,8 @@
 
         Dim blnReplay As Boolean = frmEndPage.blnGetReplay()
         If blnReplay Then
-            btnStart_Click(sender, e)
             intAttempt += 1
+            btnStart_Click(sender, e)
         End If
 
         intAttempt = 1
