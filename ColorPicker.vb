@@ -7,12 +7,7 @@
     Dim strPath As String = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "PenguinSprites")
 
     Sub SwitchBird()
-        Try
-            pbxPenguin.Image = Image.FromFile(strPath & $"\{strColor1}{strColor2}Penguin.png")
-        Catch ex As Exception
-            pbxPenguin.Image = Image.FromFile(strPath & "\GreyGreyPenguin.png")
-        End Try
-
+        pbxPenguin.Image = Image.FromFile(strPath & $"\{strColor1}{strColor2}Penguin.png")
         pbxPenguin.Image.RotateFlip(RotateFlipType.RotateNoneFlipX)
     End Sub
 

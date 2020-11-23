@@ -6,7 +6,7 @@
     Dim intFinalScore As Integer
     Public intSavedScore(5) As Integer         'Array to hold score values
 
-    Sub New(penguinImage As Image)
+    Sub New(penguinImage As Image, intPassedAttempt As Integer)
         ' This call is required by the designer.
         InitializeComponent()
         pbxPenguin.Image = penguinImage
@@ -74,15 +74,6 @@
         End If
     End Sub
 
-    'Sub Die()
-    '    'Closes the form and takes the user to the End Page
-    '    Dim frmEndPage As New EndPage(pbxPenguin.Image, intFinalScore)
-    '    Timer1.Stop()
-    '    Visible = False
-    '    frmEndPage.ShowDialog()
-    '    Close()
-    'End Sub
-
     Private Sub FlappyPenguinForm_KeyPress(sender As Object, e As KeyPressEventArgs) Handles MyBase.KeyPress
         'This subroutine makes the penguin jump
         intJumpFrame = -5
@@ -94,6 +85,4 @@
         intAttempt += 1
         lblAttempt.Text = "Attempt: " & intAttempt
     End Sub
-
-
 End Class

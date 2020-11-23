@@ -4,7 +4,7 @@
     'Connor Hultman and Tucker Robson
     '10/26/2020
 
-    Dim intAttempt As Integer
+    Dim intAttempt As Integer = 1
 
     Private Sub btnUnlocks_Click(sender As Object, e As EventArgs) Handles btnUnlocks.Click
         'Creates an instance of the unlockables form
@@ -22,7 +22,7 @@
 
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
         'Creates an instance of the game
-        Dim frmFlappyPenguinForm As New FlappyPenguinForm(pbxPenguin.Image)
+        Dim frmFlappyPenguinForm As New FlappyPenguinForm(pbxPenguin.Image, intAttempt)
         Dim frmEndPage As New Object
 
         Visible = False
@@ -38,6 +38,7 @@
             intAttempt += 1
         End If
 
+        intAttempt = 1
         Visible = True
 
     End Sub
