@@ -51,7 +51,7 @@
     End Sub
 
     Sub collision()
-        If pbxPenguin.Location.X + pbxPenguin.Width >= pbxPipe1.Location.X And pbxPenguin.Location.X <= pbxPipe1.Location.X Then
+        If (pbxPenguin.Location.X + pbxPenguin.Width >= pbxPipe1.Location.X And pbxPenguin.Location.X <= pbxPipe1.Location.X) Or (pbxPenguin.Location.X + pbxPenguin.Width >= pbxPipe1.Location.X + pbxPipe1.Width And pbxPenguin.Location.X <= pbxPipe1.Width) Then
             If pbxPenguin.Location.Y <= pbxPipe1.Location.Y + pbxPipe1.Height Or pbxPenguin.Location.Y + pbxPenguin.Height >= pbxPipe2.Location.Y Then
                 Close()
             End If
