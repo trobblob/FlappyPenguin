@@ -5,6 +5,7 @@
     '10/26/2020
 
     Dim intAttempt As Integer = 1
+    Dim intScores As New List(Of Integer)
 
     Private Sub btnUnlocks_Click(sender As Object, e As EventArgs) Handles btnUnlocks.Click
         'Creates an instance of the unlockables form
@@ -29,23 +30,20 @@
         frmFlappyPenguinForm.ShowDialog()
 
         Dim intScore As Integer = frmFlappyPenguinForm.intGetScore()
-        frmEndPage = New EndPage(intScore)
+        intScores.Add(intScore)
+        frmEndPage = New EndPage(intScore, intScores)
         frmEndPage.ShowDialog()
 
         Dim blnReplay As Boolean = frmEndPage.blnGetReplay()
         If blnReplay Then
-            btnStart_Click(sender, e)
             intAttempt += 1
+            btnStart_Click(sender, e)
         End If
 
         intAttempt = 1
         Visible = True
 
     End Sub
-
-    Public Function intGetAttempt() As Integer
-        Return intAttempt
-    End Function
 
     Private Sub StartPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Flips the penguin image so it faces the other direction in the game.
