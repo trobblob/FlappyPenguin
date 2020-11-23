@@ -5,11 +5,14 @@
     Dim intPipe As Integer
     Dim intFinalScore As Integer
     Public intSavedScore(5) As Integer         'Array to hold score values
+    Dim intAttempt As Integer
 
     Sub New(penguinImage As Image, intPassedAttempt As Integer)
         ' This call is required by the designer.
         InitializeComponent()
         pbxPenguin.Image = penguinImage
+        intAttempt = intPassedAttempt
+        lblAttempt.Text = "Attempt: " & intAttempt
     End Sub
 
     Public Function intGetScore() As Integer
@@ -79,10 +82,4 @@
         intJumpFrame = -5
     End Sub
 
-    Private Sub FlappyPenguinForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim frmStartPage As New StartPage
-        Dim intAttempt As Integer = frmStartPage.intGetAttempt()
-        intAttempt += 1
-        lblAttempt.Text = "Attempt: " & intAttempt
-    End Sub
 End Class
